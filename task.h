@@ -9,14 +9,19 @@ private:
 string taskName;
 string description;
 bool isCompleted;
-bool isPriority;
+
 
 public: 
-Task(const string taskName, const string description, bool isCompleted, bool isPriority);
+Task(const string taskName, const string description, bool isCompleted);
 string getTaskName();
 void setTaskName(string newTaskName);
 string getDescription();
 void setDescription(string newDescription);
+bool getIsCompleted();
+
+bool operator==(const Task& other) const{
+    return taskName == other.taskName;
+}
 
 
 };

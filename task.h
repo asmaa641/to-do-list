@@ -12,10 +12,11 @@ bool isCompleted;
 bool isPriority;
 
 public: 
+Task(const string taskName, const string description, bool isCompleted, bool isPriority);
 string getTaskName();
-void setTaskName(string taskName);
+void setTaskName(string newTaskName);
 string getDescription();
-void setDescription(string description);
+void setDescription(string newDescription);
 
 
 };

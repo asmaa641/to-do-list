@@ -23,6 +23,7 @@ void task_manager::displayTasks(){
         cout << "Task: " << t.getTaskName() << ", description: " << t.getDescription();
         if (t.getIsCompleted()) cout << ", completed";
         else cout << ", not completed";
+        cout << endl;
     }
 }
 
